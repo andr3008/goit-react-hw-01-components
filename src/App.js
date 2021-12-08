@@ -1,18 +1,21 @@
-import Profile from './components/user';
+import Profile from './components/profile/user';
 import user from './user.json';
-const data = user;
+import Statistics from './components/statistics/statistics';
+import statistics from './statistics.json';
+
 export default function App() {
   return (
     <div>
       <Profile
-        username={data.username}
-        tag={data.tag}
-        location={data.location}
-        avatar={data.avatar}
-        statFollowers={data.stats.followers}
-        statViews={data.stats.views}
-        statLikes={data.stats.likes}
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        statFollowers={user.stats.followers}
+        statViews={user.stats.views}
+        statLikes={user.stats.likes}
       />
+      <Statistics title="Upload stats" stats={statistics} />
     </div>
   );
 }
