@@ -1,7 +1,7 @@
 import Profile from './components/profile/user';
 import user from './user.json';
 import Statistics from './components/statistics/statistics';
-import statistics from './statistics.json';
+// import statistics from './statistics.json';
 
 export default function App() {
   return (
