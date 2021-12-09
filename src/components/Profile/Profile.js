@@ -19,7 +19,7 @@ export default function Profile({
       </div>
 
       <ul className={s.stats}>
-        <li>
+        <li key={s.tag}>
           <span className={s.label}>Followers</span>
           <span className={s.quantity}>{statFollowers}</span>
         </li>

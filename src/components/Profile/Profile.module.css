@@ -1,3 +1,9 @@
+.profile {
+  display: block;
+}
 .name {
   color: yellow;
+}
+.stats {
+  list-style: none;
 }

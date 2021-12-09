@@ -19,7 +19,7 @@ export default function App() {
         statLikes={profile.stats.likes}
       />
       <Statistics title="Upload stats" stats={statistics} />
-      <FriendList items={friendlist} />
+      <FriendList friends={friendlist} />
       <Transaction items={transaction} />;
     </div>
   );
