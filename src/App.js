@@ -6,9 +6,10 @@ import FriendList from './components/Friendlist/Friendlist';
 import friendlist from './components/Friendlist/Friendlist.json';
 import Transaction from './components/Transaction/Transaction';
 import transaction from './components/Transaction/Transaction.json';
+import s from './App.module.css';
 export default function App() {
   return (
-    <div>
+    <div className={s.App}>
       <Profile
         username={profile.username}
         tag={profile.tag}
@@ -20,7 +21,7 @@ export default function App() {
       />
       <Statistics title="Upload stats" stats={statistics} />
       <FriendList friends={friendlist} />
-      <Transaction items={transaction} />;
+      <Transaction items={transaction} />
     </div>
   );
 }

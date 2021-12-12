@@ -19,15 +19,15 @@ export default function Profile({
       </div>
 
       <ul className={s.stats}>
-        <li key={s.tag}>
+        <li className={s.item} key={s.tag}>
           <span className={s.label}>Followers</span>
           <span className={s.quantity}>{statFollowers}</span>
         </li>
-        <li>
+        <li className={s.item}>
           <span className={s.label}>Views</span>
           <span className={s.quantity}>{statViews}</span>
         </li>
-        <li>
+        <li className={s.item}>
           <span className={s.label}>Likes</span>
           <span className={s.quantity}>{statLikes}</span>
         </li>
